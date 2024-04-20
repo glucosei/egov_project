@@ -17,7 +17,7 @@
 
 ### VO
 게시글의 정보를 담는 BoardVO에 like, likeCnt, hateCnt 속성을 추가했다. 이들은 각각 jsp에서 넘어오는 좋아요, 싫어요의 상태, 해당 게시글의 좋아요 개수, 해당 게시글의 싫어요 개수를 뜻한다. 
-좋아요 정보를 DB에 저장하고 DB에서 가져오기 위한 VO인 LikeVO를 새로 만들었는데 userId, nttId, likeHate, likeID라는 lettnbbslike 테이블의 컬럼들과 대응되는 속성들을 가진다.
+좋아요 정보를 DB에 저장하고 DB에서 가져오기 위한 VO인 LikeVO를 새로 만들었는데 userId, nttId, likeHate, likeId라는 lettnbbslike 테이블의 컬럼들과 대응되는 속성들을 가진다.
 
 ### jsp
 게시된 글을 볼 때 나타나는 EgovNoticeInquire.jsp 파일에 좋아요, 싫어요 버튼을 추가하고 각각 111, 222을 frm이라는 post의 like 속성에 넣고 submit하게 하는 fn_egov_like함수와 fn_egov_hate 함수를 추가하였다.
