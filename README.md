@@ -23,6 +23,13 @@
 게시된 글을 볼 때 나타나는 EgovNoticeInquire.jsp 파일에 좋아요, 싫어요 버튼을 추가하고 각각 111, 222을 frm이라는 post의 like 속성에 넣고 submit하게 하는 fn_egov_like함수와 fn_egov_hate 함수를 추가하였다.
 
 ### controller
+좋아요 버튼이나 싫어요 버튼을 눌렀을 때 호출되는 like.do에 매핑된 like 함수를 만들고 likeVO에 정보를 담은 뒤 bbsMngService.manageLike를 호출한 후 selectBoardArticle.do로 리다이렉트하는 기능을 구현하였다. 이때 세션에 정보를 담는 것을 유사하게 구현하기 위해 전역변수에 정보를 저장해놓도록 기능을 구현해놓았다.
+
+### service
+
+### DAO
+
+### SQL
 
 ## 환경 설정
 프로젝트에서 사용된 환경 프로그램 정보는 다음과 같다.
